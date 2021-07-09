@@ -2,11 +2,7 @@ import React, { useState } from "react"
 import './Calculator.css';
 
  function Calculator(){
-     const initialstate={
-         newText:""
-      
-     }
-    useState(initialstate);
+     
     const [exp ,setExp] =useState("");
 
    const handleCalculate=()=>{
@@ -25,14 +21,17 @@ import './Calculator.css';
     return(
         <div className="container">
              <div className="row style">
-                 <div className="col" style={{height:"30px"}}>
+                 <div className="col styleResult" style={{height:"30px"}}>
                      {exp}
                  </div>         
             </div>
             <div className="row style">
-                <div className="col-6 styleNumber "onClick={handleclear} data-name="clear">
+                <div className="col styleNumber "onClick={handleclear} data-name="clear">
                     clear
                 </div>
+                <div className="col styleNumber "onClick={handleOnchangeNew} data-name="0">
+                    0               
+                 </div>
                 <div className="col styleDiv" onClick={handleCalculate} data-name="=">
                     =
                 </div>

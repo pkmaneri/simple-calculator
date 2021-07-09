@@ -1,6 +1,9 @@
 .style {
-    border: 1px solid maroon; 
+    border: 1px solid; 
     width: 200px; 
+}
+.styleResult {
+    background-color:mediumvioletred;
 }
 .styleDiv {
     background-color:rgb(226, 43, 43);
