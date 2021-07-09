@@ -1,0 +1,12 @@
+.style {
+    border: 1px solid maroon; 
+    width: 200px; 
+}
+.styleDiv {
+    background-color:rgb(226, 43, 43);
+    border: 1px solid;
+    color: white;
+}
+.styleNumber {
+    border: 1px solid;
+}
